@@ -2,6 +2,9 @@
 title: Basic Cisco router
 layout: post
 ---
+
+![cisco-1]({{ site.baseurl }}/images/basic-cisco.png)
+
 Cisco merupakan salah satu perangkat networking yang cukup populer, maka untuk melakukan setup routernya diperlukan beberapa langkah, yaitu diantaranya; setup IP, Routing, DHCP, dan NAT.
 
 Berikut konfigurasi yang akan di bentuk:
