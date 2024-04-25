@@ -14,7 +14,7 @@ Berikut konfigurasi yang akan di bentuk:
 FastEthernet 0/0 | 192.168.100.2/24(atau DHCP) | out-interface 
 FastEthernet 0/1 | 192.168.200.1/24 | in-interface(NAT)
 
-##Setup IP
+## Setup IP
 
 Untuk melakukan setup IP di router cisco ada 2 cara, yaitu static IP dan dhcp, berikut perintah untuk melakukan setup IP:
 ```
@@ -46,7 +46,7 @@ R(config-if)# end
 ```
 Untuk melihat konfigurasi IP bisa menggunakan perintah `show ip int br` atau `show run | section ip`, dan untuk melihat routing table bisa dengan perintah `show ip route`.
 
-##DNS server
+## DNS server
 
 Sinkronisasikan dengan DNS server agar bisa menerjemahkan domain name:
 ```
@@ -58,7 +58,7 @@ R(config)# ip name-server 1.1.1.1
 R(config)# ip domain-lookup 
 ```
 
-##DHCP pool & server
+## DHCP pool & server
 Berikut perintah untuk membuat dhcp pool:
 ```
 R# conf t
@@ -67,7 +67,7 @@ R(config)# network 192.168.100.0 255.255.255.0
 R(config)# default-router 192.168.100.1
 R(config)# dns-server 8.8.8.8
 ```
-##Konfigurasi NAT
+## Konfigurasi NAT
 
 NAT atau network address translation digunakan agar request dari internal bisa diteruskan oleh external. NAT sendiri diciptakan karena terbatasnya jumlah IPv4. Untuk konfigurasi NAT sebagai berikut:
 ```
