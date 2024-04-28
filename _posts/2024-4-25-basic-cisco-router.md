@@ -63,8 +63,8 @@ Berikut perintah untuk membuat dhcp pool:
 ```
 R# conf t
 R(config)# ip dhcp pool internal
-R(config)# network 192.168.100.0 255.255.255.0
-R(config)# default-router 192.168.100.1
+R(config)# network 192.168.200.0 255.255.255.0
+R(config)# default-router 192.168.200.1
 R(config)# dns-server 8.8.8.8
 ```
 ## Konfigurasi NAT
