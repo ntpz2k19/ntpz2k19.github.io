@@ -1,4 +1,4 @@
---
+---
 title: "Linux NAT DHCP"
 layout: post
 ---
