@@ -8,7 +8,7 @@ Linux adalah salah satu OS yang cukup modular, bisa digunakan sebagai desktop, s
 **Interface** | **IP** | **type**
 --- | ---| ---
 eth0| 10.10.10.9(static) atau DHCP | out-interface 
-eth0| 20.20.20.1/24 | in-interface(NAT)
+eth1| 20.20.20.1/24 | in-interface(NAT)
 
 ## Setup IP
 Untuk setup IP interface bisa menyesuaikan, atau bisa dengan artikel [Berikut](https://ntpz2k19.github.io/2023/04/28/setup-static-ip.html).
