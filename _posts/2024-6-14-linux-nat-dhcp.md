@@ -15,9 +15,14 @@ Untuk setup IP interface bisa menyesuaikan, atau bisa dengan artikel [Berikut](h
 
 
 ## Setup NAT
+Untuk nat perlu enable ip forwarding dengan perintah `# echo 0 > /proc/sys/net/ipv4/ip_forward`
+
+Lalu kita beri fowarding rules
+```
 sudo iptables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 sudo  iptables -A FORWARD -i eth1 -o eth0 -j ACCEPT
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+```
 
 
 ## Setup DHCP server
