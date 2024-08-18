@@ -1,6 +1,6 @@
 ---
 title: basic openbsd router
-layout: posts
+layout: post
 ---
 
 OpenBSD adalah salah satu OS turunan BSD yg difokuskan di security, dan cukup bisa diandalkan sebagai router sekaligus firewall.
