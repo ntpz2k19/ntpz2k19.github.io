@@ -19,6 +19,7 @@ R1(config)# enable password 0 woilahcik
 
 ## IP configuration
 Struktur IP dalam router:
+
 **Interface** | **IP** | **type**
 --- | ---| ---
 FastEthernet 1/1|192.168.10.60/24|Out-Interface
