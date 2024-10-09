@@ -184,18 +184,23 @@ switch1(config-if)#ip addr 10.10.10.2 255.255.255.0
 switch1(config-if)#exit
 ```
 ## Trunking interface
-Interface dikonfigurasi mode trunk untuk mengangkut semua vlan dari sumber ke sumber, seperti halnya batang pohon (trunk=batang).
+Interface dikonfigurasi mode trunk untuk mengangkut semua vlan dari sumber ke sumber, seperti halnya batang pohon (trunk=batang). 
+
+> Dalam virtualisasi kadang mac address table tidak terdeteksi, mac address akan mulai terdeteksi jika client sudah di setup.
+
 ```
 switch1(config)#int gi2/3
 switch1(config-if)#no shutdown
 switch1(config-if)#desc TO-R1
 switch1(config-if)#switchport trunk encapsulation dot1q
+switch1(config-if)#switchport mode trunk
 switch1(config-if)#switchport trunk allowed vlan 10-200
 switch1(config-if)#exit
 switch1(config)#int gi2/2
 switch1(config-if)#no shutdown
 switch1(config-if)#desc TO-SW2
 switch1(config-if)#switchport trunk encapsulation dot1q
+switch1(config-if)#switchport mode trunk
 switch1(config-if)#switchport trunk allowed vlan 10-200
 switch1(config-if)#exit
 ```
