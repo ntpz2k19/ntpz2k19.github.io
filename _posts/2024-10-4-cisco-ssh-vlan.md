@@ -162,7 +162,7 @@ switch1(config)# username hilmi privilege 7 password 0 switch1
 switch1(config)# enable password 0 woilahcik
 ```
 
-# VLAN management
+## VLAN management
 Berikut untuk mengkonfigurasi vlan:
 ```
 switch1(config)#vlan 10
