@@ -4,6 +4,7 @@ title: "Cisco Topology"
 ---
 
 Berikut topologi singkat dalam perangkat cisco untuk implementasi user management, vlan, ssh, dan switching.
+
 ![cisco-vlan-1]({{ site.baseurl }}/images/cisco-vlan1.png)
 
 # Router side
